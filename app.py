@@ -116,7 +116,7 @@ app.layout = html.Div(
             children=[
                 html.Img(id="logo", src=app.get_asset_url("logo2.png")),
                 html.H5(children="Analyzing Covid-Related Deaths vs Ethnicity"),
-                html.H4(children="Color and the Coronavirus: A Covid Dashboard to illustrate the effects of ethnicity on health outcomes"),
+                html.H4(children="Color and the Coronavirus: A Covid Dashboard to Illustrate the Effects of Ethnicity on Health Outcomes"),
                 html.P(
                     id="description",
                     children="† Deaths are classified according to the refined CDC guidelines as mentioned on April 14, 2020. Covid-19 was made a nationally notifiable disease on April 5, 2020 by the Council for State and Territorial Epidemiologists. All data derived from NY times.",
@@ -135,7 +135,7 @@ app.layout = html.Div(
                             children=[
                                 html.P(
                                     id="slider-text",
-                                    children="Covid Timeline: April 2020 to Current",
+                                    children="Covid Timeline: April 2020 to December 2020",
                                 ),
                                 dcc.Slider(
                                     id="years-slider",
@@ -187,7 +187,7 @@ app.layout = html.Div(
                 html.Div(
                     id="graph-container",
                     children=[
-                        html.P(id="chart-selector", children="Select chart:"),
+                        html.P(id="chart-selector", children="Select chart: Then drag on the map to select counties"),
                         dcc.Dropdown(
                             options=[
                                 {
